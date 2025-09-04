@@ -28,7 +28,7 @@ public class Mazlicek {
         return null;
     }
 
-    public String vypocetPrumernehoVeku(){
+    public String vypocetPrumernehoVeku(Mazlicek mazlicek){
         double prumerVek = 0;
         int vekCelkem = 0;
         int pocet = 0;
@@ -40,7 +40,7 @@ public class Mazlicek {
         System.out.println("Průměrný věk: " + prumerVek);
     }
 
-    public void vypocetPrumerneVahy(){
+    public void vypocetPrumerneVahy(Mazlicek mazlicek){
         double prumerVaha = 0;
         double vahaCelkem = 0;
         int pocet = 0;
@@ -52,6 +52,10 @@ public class Mazlicek {
         System.out.println("Průměrná váha: " + prumerVaha);
     }
 
+
+    public void vyhledatPodleJmena(String jmeno, Mazlicek mazlicek){
+
+    }
 
 
 

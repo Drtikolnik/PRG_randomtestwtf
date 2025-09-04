@@ -12,7 +12,6 @@ public class Main {
             System.out.println("3 - průměrný věk");
             System.out.println("4 - průměrná váha");
             System.out.println("5 - vyhledat podle jména");
-            //System.out.println("0 - ukončit");
             int vyber = sc.nextInt();
             sc.nextLine();
             switch (vyber) {
@@ -31,15 +30,22 @@ public class Main {
 
 
                 case 3:
-                    Mazlicek.vypocetPrumernehoVeku();
-                }
+                    Mazlicek.vypocetPrumernehoVeku(mazlickove);
+                break;
 
+
+                case 4:
+                    Mazlicek.vypocetPrumerneVahy(mazlickove);
                     break;
 
 
+                case 5:
+                    System.out.println("Zadej jméno:");
+                    String jmeno = sc.nextLine();
 
-                //case 0:
-                // break;
+                    Mazlicek.vyhledatPodleJmena(jmeno, mazlickove);
+                    break;
+
             }
 
 
