@@ -4,6 +4,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         ArrayList<Mazlicek> mazlickove = new ArrayList<>();
+        Mazlicek haf = new Mazlicek();
 
         for (boolean behZapisu=true;;behZapisu=true) {
 
@@ -31,12 +32,13 @@ public class Main {
 
 
                 case 3:
-                    Mazlicek.vypocetPrumernehoVeku(mazlickove);
+
+                    haf.vypocetPrumernehoVeku(mazlickove);
                 break;
 
 
                 case 4:
-                    Mazlicek.vypocetPrumerneVahy(mazlickove);
+                    haf.vypocetPrumerneVahy(mazlickove);
                     break;
 
 
@@ -44,7 +46,7 @@ public class Main {
                     System.out.println("Zadej jméno:");
                     String jmeno = sc.nextLine();
 
-                    Mazlicek.vyhledatPodleJmena(jmeno, mazlickove);
+                    haf.vyhledatPodleJmena(jmeno, mazlickove);
                     break;
 
 
@@ -52,7 +54,7 @@ public class Main {
                     System.out.println("Zadej druh:");
                     String druh = sc.nextLine();
 
-                    Mazlicek.vyhledatPodleDruhu(druh, mazlickove);
+                    haf.vyhledatPodleDruhu(druh, mazlickove);
                     break;
 
             }
