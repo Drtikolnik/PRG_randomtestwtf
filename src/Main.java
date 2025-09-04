@@ -12,6 +12,7 @@ public class Main {
             System.out.println("3 - průměrný věk");
             System.out.println("4 - průměrná váha");
             System.out.println("5 - vyhledat podle jména");
+            System.out.println("6 - filtrovat podle druhu");
             int vyber = sc.nextInt();
             sc.nextLine();
             switch (vyber) {
@@ -44,6 +45,14 @@ public class Main {
                     String jmeno = sc.nextLine();
 
                     Mazlicek.vyhledatPodleJmena(jmeno, mazlickove);
+                    break;
+
+
+                case 6:
+                    System.out.println("Zadej druh:");
+                    String druh = sc.nextLine();
+
+                    Mazlicek.vyhledatPodleDruhu(druh, mazlickove);
                     break;
 
             }
