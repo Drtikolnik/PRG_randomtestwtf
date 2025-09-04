@@ -30,6 +30,14 @@ public class Main {
                     break;
 
 
+                case 3:
+                    Mazlicek.vypocetPrumernehoVeku();
+                }
+
+                    break;
+
+
+
                 //case 0:
                 // break;
             }

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Mazlicek {
@@ -6,6 +7,7 @@ public class Mazlicek {
     private String druh;
     private int vek;
     private double vaha;
+    private ArrayList<Mazlicek> mazlickove;
 
     Mazlicek(){
         System.out.println("Jméno mazlíčka:");
@@ -26,6 +28,29 @@ public class Mazlicek {
         return null;
     }
 
+    public String vypocetPrumernehoVeku(){
+        double prumerVek = 0;
+        int vekCelkem = 0;
+        int pocet = 0;
+        for (Mazlicek mazlicek : mazlickove) {
+            vekCelkem = vekCelkem + mazlicek.getVek();
+            pocet++;
+        }
+        prumerVek = vekCelkem / pocet;
+        System.out.println("Průměrný věk: " + prumerVek);
+    }
+
+    public void vypocetPrumerneVahy(){
+        double prumerVaha = 0;
+        double vahaCelkem = 0;
+        int pocet = 0;
+        for (Mazlicek mazlicek : mazlickove) {
+            vahaCelkem = vahaCelkem + mazlicek.getVaha();
+            pocet++;
+        }
+        prumerVaha = vahaCelkem / pocet;
+        System.out.println("Průměrná váha: " + prumerVaha);
+    }
 
 
 
