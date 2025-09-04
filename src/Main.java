@@ -27,7 +27,6 @@ public class Main {
                         mazlicek.toString();
                         System.out.println();
                     }
-
                     break;
 
 
