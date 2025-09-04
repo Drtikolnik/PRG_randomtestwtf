@@ -4,7 +4,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         ArrayList<Mazlicek> mazlickove = new ArrayList<>();
-        Mazlicek haf = new Mazlicek();
+        SpravaMazlicku haf = new SpravaMazlicku();
 
         for (boolean behZapisu=true;;behZapisu=true) {
 
